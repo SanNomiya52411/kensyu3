@@ -1,0 +1,548 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    color: #383e45;
+    font-size: 0.9rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+li {
+    list-style: none;
+}
+
+/* ヘッダー */
+header {
+    height: 70px;
+    display: flex;
+    background-color: #F1F1F1;
+}
+
+.header-left {
+    padding-left: 30px;
+    align-items: center;
+    display: flex;
+}
+
+.header-left img {
+    height: 26px;
+    margin: 15px 15px 15px 0;
+}
+
+.header-left ul {
+    display: flex;
+}
+
+.header-left li {
+    margin: 15px;
+}
+
+.header-left li a {
+    color: #454242;
+}
+
+.header-right {
+    background-color: black;
+    margin: 0 0 0 auto;
+    line-height: auto;
+}
+
+.header-right a {
+    padding: 28px 37px;
+    display: inline-block;
+    font-size: 12px;
+    padding-top: 24px;
+    color: white;
+}
+
+.header-right a:hover{
+    background-color: rgba(255, 255, 255, 0.5)
+}
+
+/* メイン部分 */
+main {
+    background-color: #F1F1F1;
+}
+
+.main-visual img{
+    width: 100%;
+    height: calc(100vh - 70px);
+    object-fit: cover;
+}
+
+/* ニュース */
+
+#news {
+    padding: 60px 10% 60px 15%;
+}
+
+.news-content-flex {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.news-head h2 {
+    color: #454242;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.news-head p {
+    position: relative;
+}
+
+.news-head p::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    /*線の長さ*/
+    height: 1px;
+    /*線の太さ*/
+    bottom: -30px;
+    left: 0;
+    background-color: black;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
+}
+
+.news-contents {
+    margin-top: 60px;
+}
+
+.news-contents time {
+    margin-right: 10px;
+}
+
+.news-contents span {
+    background-color: black;
+    color: white;
+    padding: 0 5px;
+}
+
+.news-contents ul {
+    display: flex;
+}
+
+.news-contents li {
+    padding-left: 15px;
+    width: 33%;
+    border-right: 2px solid #ccc;
+}
+
+.news-contents li:first-child {
+    padding-left: 0;
+}
+
+.news-contents li:last-child {
+    border: none;
+}
+
+/* about */
+
+#about {
+    display: flex;
+    margin-bottom: 180px;
+}
+
+.about-left {
+    width: 70%;
+}
+
+.about-left img {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.about-right {
+    width: 45%;
+    margin: 180px 5% 0 5%;
+}
+
+.about-head h2 {
+    color: #454242;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.about-head p {
+    position: relative;
+}
+
+.about-head p::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    /*線の長さ*/
+    height: 1px;
+    /*線の太さ*/
+    bottom: -30px;
+    left: 0;
+    background-color: black;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
+}
+
+
+.about-detail {
+    margin-top: 80px;
+    line-height: 25px;
+}
+
+.about-detail {
+    font-size: 13px;
+}
+
+/* business */
+
+#business {
+    padding: 60px 10% 60px 15%;
+}
+
+.business-head h2 {
+    color: #454242;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.business-head p {
+    position: relative;
+}
+
+.business-head p::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    /*線の長さ*/
+    height: 1px;
+    /*線の太さ*/
+    bottom: -30px;
+    left: 0;
+    background-color: black;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
+}
+
+.business-images {
+    margin: 0 15% 0 10%;
+    display: flex;
+    margin-top: 60px;
+}
+
+.business-left {
+    width: 50%;
+    padding: 150px 5% 0 0;
+}
+
+.business-right {
+    width: 50%;
+}
+
+.business-content {
+    margin-bottom: 40px;
+}
+
+.business-content p {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.business-content p {
+    display: flex;
+    align-items: center;
+    /* 垂直中心 */
+}
+
+.business-content p:before{
+    border-top: 1px solid;
+    content: "";
+    width: 10px;
+    /* 線の長さ */
+}
+
+.business-content p:before {
+    margin-right: 1em;
+    /* 文字の右隣 */
+}
+
+/* company */
+#company {
+    padding: 60px 10% 60px 15%;
+    position: relative;
+}
+
+.company-head h2 {
+    color: #454242;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: 10px;
+}
+
+.company-head p {
+    position: relative;
+}
+
+.company-head p::after {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    width: 40px;
+    /*線の長さ*/
+    height: 1px;
+    /*線の太さ*/
+    bottom: -30px;
+    left: 0;
+    background-color: black;
+    /*線の色*/
+    border-radius: 2px;
+    /*線の丸み*/
+}
+
+.company-left {
+    background-color: white;
+    width: 50%;
+    padding: 90px 0 90px 60px;
+}
+
+.company-detail {
+    margin-top: 80px;
+    margin-right: 15%;
+}
+
+.company-detail dt {
+    float:left;
+}
+
+.company-detail dd{
+    margin-bottom: 10px;
+    margin-left: 80px;
+}
+
+.company-right{
+    position: absolute;
+    top: 180px;
+    bottom: 0;
+    right: 0;
+    left: 500px;
+    margin: auto;
+    width: 40%;
+}
+
+.company-right img {
+    height: 400px;
+    object-fit: cover;
+}
+
+/* footer */
+footer {
+    height: 200px;
+    padding: 30px 10% 0 15%;
+}
+
+.footer-container {
+    display: flex;
+    margin-top: 30px;
+}
+
+.footer-left img {
+    height: 26px;
+    margin-bottom: 60%;
+}
+
+footer p {
+    font-size: 10px;
+}
+
+.footer-right {
+    margin: 0 0 0 auto;
+}
+
+.footer-right li {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+@media (max-width:900px) {
+
+    header {
+        height: 140px;
+    }
+
+    .header-left {
+        align-items: center;
+        display: block;
+        margin-top: 3%;
+        width: 100%;
+    }
+    
+    .header-left li:first-child {
+        margin-left: 0px;
+    }
+
+    .header-right {
+        opacity: 0;
+    }
+
+    .header-right {
+        margin: 0;
+        line-height: 0;
+    }
+    
+    .header-right a {
+        padding: 0;
+        font-size: 0;
+        padding-top: 0;
+    }
+
+    /* Break Point 900px main visual */
+    .main-visual img{
+        height: calc(100vh - 140px);
+    }
+
+    /* Brake Point 900px news */
+    #news {
+        padding: 60px 1% 60px 3%;
+    }
+
+    .news-contents ul {
+        display: block;
+    }
+
+    .news-contents li {
+        padding-left: 0;
+        width: 100%;
+        border-right: none;
+        margin-bottom: 25px;
+    }
+
+    /* Brake Point 900px about */
+    #about {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .about-left {
+        width: 100%;
+    }
+    
+    .about-left img {
+        width: 100%;
+    }
+
+    .about-right {
+        width: 100%;
+    }
+    
+    .about-right {
+        width: auto;
+        margin: 20px 5% 0 5%;
+    }
+
+    /* Brake Point 900px business */
+    #business {
+        padding: 60px 3% 0 3%;
+    }
+
+    .business-head{
+        margin-bottom: 60px;
+    }
+
+    .business-images {
+        margin: 60px 0 0 0;
+        display: block;
+        margin-top: 0;
+    }
+
+    .business-left,
+    .business-right{
+        width: 100%;
+        padding: 0 0% 0 0;
+    }
+
+    /* Brake Point 900px company */
+    #company {
+        padding: 60px 3% 0 3%;
+        position: static;
+    }
+
+    .company-left {
+        background-color: white;
+        width: 90%;
+        padding:5%;
+
+    }
+    .company-right{
+        margin-top: 20px;
+        position: static;
+        width: 100%;
+    }
+
+    .company-right img {
+        height: 600px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+    .company-detail dt {
+        float:none;
+        margin-bottom: 5px;
+    }
+
+    .company-detail dd{
+        margin-bottom: 10px;
+        margin-left:5%;
+    }
+
+    /* Brake Point 900px footer */
+
+    footer {
+        height: 300px;
+        padding: 30px 5% 0 5%;
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .footer-left img {
+        margin-bottom: 10px;
+    }
+
+    .footer-right {
+        margin-bottom: 8%;
+    }
+
+    .footer-right li {
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    footer p {
+        font-size: 14px;
+    }
+
+}
